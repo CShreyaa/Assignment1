@@ -1,10 +1,7 @@
-// middleware/authMiddleware.js
 const isAuthenticated = (req, res, next) => {
-    // Check if user is authenticated
-    // You can implement your authentication logic here
-    const isAuthenticated = true; // Example logic
+    const isAuthenticated = true; 
     if (isAuthenticated) {
-      next(); // If authenticated, proceed to the next middleware
+      next();
     } else {
       res.status(401).json({ message: "Unauthorized" });
     }

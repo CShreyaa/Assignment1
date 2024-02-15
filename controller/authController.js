@@ -1,12 +1,9 @@
-// controllers/authController.js
 const login = (req, res) => {
-    // Implement login logic
-    res.send('Login endpoint');
+    res.send('Login successful');
   };
   
   const register = (req, res) => {
-    // Implement register logic
-    res.send('Register endpoint');
+    res.send('Register successful');
   };
   
   module.exports = {

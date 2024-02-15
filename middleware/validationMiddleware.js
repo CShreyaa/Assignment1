@@ -1,4 +1,3 @@
-// middleware/validationMiddleware.js
 const validateAuthorId = (req, res, next) => {
     const authorId = req.params.authorId;
     if (!Number.isInteger(parseInt(authorId))) {
