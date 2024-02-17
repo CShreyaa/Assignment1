@@ -1,12 +1,10 @@
 const validateLogin = (req, res, next) => {
-    // Validation logic for login
-    console.log('Login validation middleware executed');
+    console.log('Login validation middleware executed...');
     next();
   };
   
   const validateRegister = (req, res, next) => {
-    // Validation logic for registration
-    console.log('Register validation middleware executed');
+    console.log('Register validation middleware executed...');
     next();
   };
   

@@ -1,6 +1,6 @@
 const applicationMiddleware = (req, res, next) => {
     // Common functionality across routes
-    console.log('Application middleware executed');
+    console.log('Application middleware executed...');
     next();
   };
   

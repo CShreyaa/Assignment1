@@ -3,14 +3,15 @@ const express=require('express');
 const builtinMiddleware=express();
 
 builtinMiddleware.use(express.json());
-builtinMiddleware.use(express.urlencoded({extended:true}));
+builtinMiddleware.use(express.urlencoded({extended:false}));
 
 builtinMiddleware.get('/built',(req,res)=>{
-    res.send(req.body);
+    res.json({message:"Get all details"});
 });
 
 builtinMiddleware.post('/built',(req,res)=>{
-    res.send(req.body);
+    console.log("This is the request body received from client",req.body)
+    res.json({message:"New details created"});
 });
 
 module.exports=builtinMiddleware;
