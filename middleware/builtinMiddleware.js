@@ -5,4 +5,12 @@ const builtinMiddleware=express();
 builtinMiddleware.use(express.json());
 builtinMiddleware.use(express.urlencoded({extended:true}));
 
+builtinMiddleware.get('/built',(req,res)=>{
+    res.send(req.body);
+});
+
+builtinMiddleware.post('/built',(req,res)=>{
+    res.send(req.body);
+});
+
 module.exports=builtinMiddleware;

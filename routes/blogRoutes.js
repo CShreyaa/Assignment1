@@ -1,5 +1,13 @@
 const express = require('express');
 const router = express.Router();
+const { routerMiddleware } = require('../middleware/routerMiddleware');
+const configurableMiddleware = require('../middleware/configurableMiddleware');
+
+// Router-level middleware
+router.use(routerMiddleware);
+
+// Configurable middleware with a custom configuration
+router.use(configurableMiddleware('CustomConfig'));
 
 const blogs = [];
 
